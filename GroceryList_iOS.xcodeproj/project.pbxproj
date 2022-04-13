@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1208329428064597002DB26A /* SQLiteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208329328064597002DB26A /* SQLiteHelper.swift */; };
+		120832962806462F002DB26A /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120832952806462F002DB26A /* ListModel.swift */; };
+		1208329828066FCA002DB26A /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208329728066FCA002DB26A /* ListViewCell.swift */; };
 		121BD1822803860700F72A98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121BD1812803860700F72A98 /* AppDelegate.swift */; };
 		121BD1842803860700F72A98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121BD1832803860700F72A98 /* SceneDelegate.swift */; };
 		121BD1862803860700F72A98 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121BD1852803860700F72A98 /* HomeController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1208329328064597002DB26A /* SQLiteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteHelper.swift; sourceTree = "<group>"; };
+		120832952806462F002DB26A /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		1208329728066FCA002DB26A /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 		121BD17E2803860700F72A98 /* GroceryList_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryList_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		121BD1812803860700F72A98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		121BD1832803860700F72A98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 				121BD1852803860700F72A98 /* HomeController.swift */,
 				121BD19828038A5900F72A98 /* ListController.swift */,
 				121BD19A280390A500F72A98 /* SetttingController.swift */,
+				1208329728066FCA002DB26A /* ListViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -86,6 +93,8 @@
 		121BD19628038A0400F72A98 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1208329328064597002DB26A /* SQLiteHelper.swift */,
+				120832952806462F002DB26A /* ListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,7 +181,10 @@
 				121BD1822803860700F72A98 /* AppDelegate.swift in Sources */,
 				121BD1842803860700F72A98 /* SceneDelegate.swift in Sources */,
 				121BD19B280390A500F72A98 /* SetttingController.swift in Sources */,
+				1208329828066FCA002DB26A /* ListViewCell.swift in Sources */,
+				120832962806462F002DB26A /* ListModel.swift in Sources */,
 				121BD19928038A5900F72A98 /* ListController.swift in Sources */,
+				1208329428064597002DB26A /* SQLiteHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
