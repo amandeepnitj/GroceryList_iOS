@@ -18,6 +18,9 @@
 		121BD18E2803860800F72A98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 121BD18C2803860800F72A98 /* LaunchScreen.storyboard */; };
 		121BD19928038A5900F72A98 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121BD19828038A5900F72A98 /* ListController.swift */; };
 		121BD19B280390A500F72A98 /* SetttingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121BD19A280390A500F72A98 /* SetttingController.swift */; };
+		125CA6592807B08C0081FE49 /* ViewListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CA6582807B08C0081FE49 /* ViewListController.swift */; };
+		125CA65B2807B1410081FE49 /* Viewlistcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CA65A2807B1410081FE49 /* Viewlistcell.swift */; };
+		12D6E91828076EAF00FDF273 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D6E91728076EAF00FDF273 /* HomeViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		121BD18F2803860800F72A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		121BD19828038A5900F72A98 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		121BD19A280390A500F72A98 /* SetttingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingController.swift; sourceTree = "<group>"; };
+		125CA6582807B08C0081FE49 /* ViewListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewListController.swift; sourceTree = "<group>"; };
+		125CA65A2807B1410081FE49 /* Viewlistcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewlistcell.swift; sourceTree = "<group>"; };
+		12D6E91728076EAF00FDF273 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 				121BD19828038A5900F72A98 /* ListController.swift */,
 				121BD19A280390A500F72A98 /* SetttingController.swift */,
 				1208329728066FCA002DB26A /* ListViewCell.swift */,
+				125CA6582807B08C0081FE49 /* ViewListController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +109,8 @@
 		121BD19728038A0F00F72A98 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				12D6E91728076EAF00FDF273 /* HomeViewCell.swift */,
+				125CA65A2807B1410081FE49 /* Viewlistcell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -185,6 +194,9 @@
 				120832962806462F002DB26A /* ListModel.swift in Sources */,
 				121BD19928038A5900F72A98 /* ListController.swift in Sources */,
 				1208329428064597002DB26A /* SQLiteHelper.swift in Sources */,
+				125CA6592807B08C0081FE49 /* ViewListController.swift in Sources */,
+				125CA65B2807B1410081FE49 /* Viewlistcell.swift in Sources */,
+				12D6E91828076EAF00FDF273 /* HomeViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

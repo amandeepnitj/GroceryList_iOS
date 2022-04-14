@@ -147,6 +147,39 @@ class SQLiteHelper {
         return listarray;
     }
     
+    func getlistnames() -> [String]{
+
+        var listarray = [String]();
+        let queryStatementString = "SELECT distinct listname FROM " + TABLE + ";"
+
+      var queryStatement: OpaquePointer?
+      // 1
+      if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) ==
+          SQLITE_OK {
+        // 2
+        while sqlite3_step(queryStatement) == SQLITE_ROW {
+          
+          
+          
+            
+          guard let queryResultCol1 = sqlite3_column_text(queryStatement, 0) else {
+            print("Query result is nil")
+              return  listarray;
+          }
+          let name = String(cString: queryResultCol1)
+            listarray.append(name);
+          // 5
+            
+           
+      
+      }
+      }
+      // 7
+      sqlite3_finalize(queryStatement)
+//        print(list)
+        return listarray;
+    }
+    
 
     
 }
