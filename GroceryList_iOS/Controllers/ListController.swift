@@ -21,7 +21,7 @@ class ListController: UIViewController {
     @IBOutlet weak var addbuttoon: UIButton!
     @IBOutlet weak var Itemname: UITextField!
     var listarray : [ListModel] = [ListModel]();
-    let names = ["Aman", "Kiran", "Azreen","Tanuja"]
+    
     var dbHelper = SQLiteHelper();
    
     
@@ -36,7 +36,7 @@ class ListController: UIViewController {
         
         a = dbHelper.createTable()
         print("db create table == " + (a ? "True":"false"));
-        listarray = dbHelper.getdata(filter: "Sobeys");
+        
     }
     
 
@@ -49,6 +49,9 @@ class ListController: UIViewController {
         list.cost = Double(Amount.text ?? "0.0") ?? 0.0;
         list.bought = 0;
         let p : Bool  = dbHelper.insertData(list: list)
+        listarray = dbHelper.getdata(filter: list.listname);
+        TableView.reloadData();
+        
         print(p);
         
 //        TableView.reloadData()

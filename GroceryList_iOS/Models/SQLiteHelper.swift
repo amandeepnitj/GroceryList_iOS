@@ -180,6 +180,25 @@ class SQLiteHelper {
         return listarray;
     }
     
+    func deletedata(listname : String){
+        let deleteStatementString = "DELETE FROM listtable where listname = '" + listname + "';"
+
+      var deleteStatement: OpaquePointer?
+        
+        if sqlite3_prepare_v2(db, deleteStatementString, -1, &deleteStatement, nil) ==
+              SQLITE_OK {
+            while sqlite3_step(deleteStatement) == SQLITE_DONE {
+              print("\nSuccessfully deleted row.")
+            }
+          } else {
+            print("\nDELETE statement could not be prepared")
+          }
+          
+          sqlite3_finalize(deleteStatement)
+        
+        
+    }
+    
 
     
 }

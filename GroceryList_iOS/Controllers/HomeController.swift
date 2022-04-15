@@ -43,6 +43,29 @@ class HomeController: UIViewController {
         self.present(navigationcontroller, animated: true, completion: nil)
     }
     
+    @objc func clickdeletebutton(sender: UIButton)
+    {
+//        let story  = UIStoryboard(name: "Main", bundle: nil)
+//        let controller = story.instantiateViewController(withIdentifier: "HomeController") as! HomeController
+//        let navigationcontroller  = UINavigationController(rootViewController: controller);
+//        self.present(navigationcontroller, animated: true, completion: nil)
+        dbHelper.deletedata(listname: arrayoflist[sender.tag])
+        print(sender.tag);
+        arrayoflist = dbHelper.getlistnames();
+        HometableView.reloadData();
+        
+        
+        print("delete button touched  ");
+        
+    }
+    
+    override func viewWillAppear(_ animated : Bool) {
+        
+        arrayoflist = dbHelper.getlistnames();
+        HometableView.reloadData(); // to reload selected cell
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "viewlistsegue")
         {
@@ -62,6 +85,7 @@ class HomeController: UIViewController {
 extension HomeController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("you tapped");
+        
         self.performSegue(withIdentifier: "viewlistsegue", sender: self)
     }
 }
@@ -75,6 +99,8 @@ extension HomeController : UITableViewDataSource{
         
         let cell = HometableView.dequeueReusableCell(withIdentifier: "Homecell", for: indexPath) as! HomeViewCell;
         cell.listname_home.text = arrayoflist[indexPath.row]
+        cell.Deletebutton.tag = indexPath.row;
+        cell.Deletebutton.addTarget(self, action: #selector(clickdeletebutton(sender:)), for: .touchUpInside)
         
         return cell
     }

@@ -27,6 +27,7 @@ class ViewListController: UIViewController {
         a = dbHelper.createTable()
         print("db create table == " + (a ? "True":"false"));
         listarray = dbHelper.getdata(filter: mylistname ?? "");
+        self.navigationItem.title = mylistname;
     }
     
 

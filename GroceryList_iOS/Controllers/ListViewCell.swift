@@ -16,7 +16,7 @@ class ListViewCell: UITableViewCell {
     @IBOutlet weak var quantity: UILabel!
     
     @IBOutlet weak var cost: UILabel!
-    @IBOutlet weak var Deletebutton: UIButton!
+    
     
     
     override func awakeFromNib() {

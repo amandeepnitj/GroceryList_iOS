@@ -14,10 +14,10 @@ class HomeViewCell: UITableViewCell {
     
     @IBOutlet weak var View1: UIView!
     
-    @IBOutlet weak var editbuttom: UIButton!
     @IBOutlet weak var listname_home: UILabel!
     
     
+    @IBOutlet weak var Deletebutton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
